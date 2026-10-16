@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coca-Cola Company - Editorial Homepage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for high-end serif titles, Inter for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parchment: '#F4F0EA',
+                        parchmentDark: '#EBE5DC',
+                        cokeRed: '#F40009',
+                        goldAccent: '#C59B27',
+                        goldHover: '#B28A20',
+                        darkFooter: '#161616',
+                        editorialDark: '#1C1C1C'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F4F0EA;
+            color: #1A1A1A;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif-title {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .editorial-border-b {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        }
+        .editorial-border-t {
+            border-top: 1px solid rgba(0, 0, 0, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-parchment text-neutral-950 font-sans antialiased selection:bg-goldAccent selection:text-white">
+
+    <!--  Navigation Bar -->
+    <header class="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-4">
+
+
+
+        <!-- Logo Box -->
+        <div class="flex items-center gap-3">
+            <div class="bg-cokeRed text-white font-serif font-bold text-2xl w-10 h-10 flex items-center justify-center rounded-sm shadow-sm">
+                C
+            </div>
+            <div class="serif-title text-xl font-bold tracking-tight text-neutral-900">
+                The Coca-Cola Company
+            </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="flex items-center gap-8 text-xs tracking-widest font-medium text-neutral-800">
+            <a href="#home" class="hover:text-goldAccent transition-colors pb-1 border-b-2 border-neutral-900">HOME</a>
+            <a href="#heritage" class="hover:text-goldAccent transition-colors">HERITAGE</a>
+            <a href="#portfolio" class="hover:text-goldAccent transition-colors">PORTFOLIO</a>
+            <a href="#sustainability" class="hover:text-goldAccent transition-colors">SUSTAINABILITY</a>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+        
+        <!-- SECTION 01: HERO -->
+        <section id="home" class="pt-8 pb-20 editorial-border-b">
+            <div class="text-xs tracking-widest font-semibold text-neutral-500 mb-6 flex items-center gap-3">
+                <span class="text-neutral-900 font-bold">01</span>
+                <span class="w-8 h-[1px] bg-neutral-400"></span>
+                <span>A GLOBAL COMPANY</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <h1 class="serif-title text-5xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] text-neutral-900">
+                        Refreshing <span class="italic font-semibold text-goldAccent">life,</span> one story at a time.
+                    </h1>
+                    <p class="text-lg text-neutral-600 max-w-xl font-light leading-relaxed">
+                        The Coca-Cola Company is a total beverage company. Across markets and moments, our brands are part of everyday rituals and enduring cultural memories.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-2">
+                        <a href="#portfolio" class="inline-flex items-center justify-between gap-4 bg-goldAccent hover:bg-goldHover text-white px-7 py-4 text-xs font-semibold tracking-widest transition-all shadow-sm group">
+                            <span>DISCOVER OUR STORY</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                        <span class="text-xs text-neutral-500 tracking-wider">FROM 1886 · ATLANTA, GEORGIA</span>
+                    </div>
+
+                    <div class="pt-12 flex justify-between items-center text-xs tracking-widest text-neutral-500 editorial-border-t">
+                        <span>A FAMILIAR SILHOUETTE · A SHARED LANGUAGE</span>
+                        <span class="flex items-center gap-1 font-medium text-neutral-800">READ DOWNWARD <span class="text-sm">↓</span></span>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image -->
+                <div class="lg:col-span-5 relative group">
+                    <div class="relative overflow-hidden shadow-xl bg-neutral-900 aspect-[4/5]">
+                        <img src="Heroimg.png" alt="Coca-Cola bottle on wooden table" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/600x750/111111/FFFFFF?text=Heroimg.png';">
+                        <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm text-white px-3 py-1.5 text-[10px] tracking-widest uppercase">
+                            ARCHIVE IN MOTION
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02: OUR COMPANY -->
+        <section id="heritage" class="py-20 editorial-border-b">
+            <div class="text-xs tracking-widest font-semibold text-neutral-500 mb-6 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="text-neutral-900 font-bold">02</span>
+                    <span class="w-8 h-[1px] bg-neutral-400"></span>
+                    <span>OUR COMPANY</span>
+                </div>
+                <div class="hidden sm:block text-[11px] text-neutral-500 tracking-wider">
+                    BRANDS · PEOPLE · COMMUNITIES · OCCASIONS
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-7">
+                    <h2 class="serif-title text-4xl sm:text-5xl font-normal leading-[1.15] text-neutral-900">
+                        A beverage company with culture at its center.
+                    </h2>
+                </div>
+                <div class="lg:col-span-5">
+                    <p class="text-neutral-600 text-sm sm:text-base font-light leading-relaxed">
+                        Our enduring scale is matched by local knowledge. We work with bottling partners, customers, communities and colleagues to bring beverages to people while evolving the choices we offer and the way our system operates.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Dropped Capital Quote Paragraph Block -->
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8 lg:col-start-1">
+                    <p class="text-xl sm:text-2xl text-neutral-800 font-serif leading-relaxed">
+                        <span class="float-left text-6xl sm:text-7xl font-serif font-bold text-neutral-900 leading-none mr-4 mt-1">W</span>
+                        e offer a broad portfolio of beverages designed to meet different tastes, lifestyles and occasions. The work begins with listening—understanding what people value in the places where they live.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: CULTURAL PRESENCE -->
+        <section class="py-20 editorial-border-b">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
+                <div>
+                    <div class="text-xs tracking-widest font-semibold text-neutral-500 mb-4 flex items-center gap-3">
+                        <span class="text-neutral-900 font-bold">03</span>
+                        <span class="w-8 h-[1px] bg-neutral-400"></span>
+                        <span>CULTURAL PRESENCE</span>
+                    </div>
+                    <h2 class="serif-title text-4xl sm:text-5xl font-normal text-neutral-900">
+                        Where a drink becomes a memory.
+                    </h2>
+                </div>
+                <div class="max-w-xs text-xs text-neutral-500 leading-relaxed font-light">
+                    Three lenses on how an everyday beverage can live in design, ritual and creative expression.
+                </div>
+            </div>
+
+            <!-- 3-Column Image Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="flex flex-col group">
+                    <div class="relative overflow-hidden aspect-[4/4] mb-6 bg-neutral-900 shadow-md">
+                        <img src="At the shared table.png" alt="At the shared table" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/111111/FFFFFF?text=At+the+shared+table.png';">
+                        <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-white px-2.5 py-1 text-[9px] tracking-widest uppercase">
+                            ARCHIVE IN MOTION
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center text-[11px] text-neutral-500 tracking-wider mb-2">
+                        <span class="font-bold text-neutral-900">01</span>
+                        <span>CULTURAL LENS</span>
+                    </div>
+                    <h3 class="serif-title text-2xl font-normal text-neutral-900 mb-2">At the shared table</h3>
+                    <p class="text-neutral-600 text-sm font-light leading-relaxed">
+                        Moments of connection—ordinary, celebratory and everything between—have always shaped the meaning around our beverages.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col group">
+                    <div class="relative overflow-hidden aspect-[4/4] mb-6 bg-neutral-900 shadow-md">
+                        <img src="An icon in design.png" alt="An icon in design" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/111111/FFFFFF?text=An+icon+in+design.png';">
+                        <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-white px-2.5 py-1 text-[9px] tracking-widest uppercase">
+                            ARCHIVE IN MOTION
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center text-[11px] text-neutral-500 tracking-wider mb-2">
+                        <span class="font-bold text-neutral-900">02</span>
+                        <span>CULTURAL LENS</span>
+                    </div>
+                    <h3 class="serif-title text-2xl font-normal text-neutral-900 mb-2">An icon in design</h3>
+                    <p class="text-neutral-600 text-sm font-light leading-relaxed">
+                        Distinctive packaging, lettering and color created a visual language recognized across generations and geographies.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col group">
+                    <div class="relative overflow-hidden aspect-[4/4] mb-6 bg-neutral-900 shadow-md">
+                        <img src="Made with culture.png" alt="Made with culture" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/500x500/111111/FFFFFF?text=Made+with+culture.png';">
+                        <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-sm text-white px-2.5 py-1 text-[9px] tracking-widest uppercase">
+                            ARCHIVE IN MOTION
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center text-[11px] text-neutral-500 tracking-wider mb-2">
+                        <span class="font-bold text-neutral-900">03</span>
+                        <span>CULTURAL LENS</span>
+                    </div>
+                    <h3 class="serif-title text-2xl font-normal text-neutral-900 mb-2">Made with culture</h3>
+                    <p class="text-neutral-600 text-sm font-light leading-relaxed">
+                        Music, sport, food and creative expression meet in stories that are locally meaningful and globally understood.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 04: LIVING ARCHIVE -->
+        <section id="portfolio" class="py-20">
+            <div class="bg-editorialDark text-white p-8 sm:p-12 lg:p-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center shadow-xl">
+                <!-- Left Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="text-xs tracking-widest font-semibold text-neutral-400 flex items-center gap-3">
+                        <span class="text-white font-bold">04</span>
+                        <span class="w-8 h-[1px] bg-neutral-600"></span>
+                        <span>LIVING ARCHIVE</span>
+                    </div>
+                    <h2 class="serif-title text-4xl sm:text-5xl font-normal leading-[1.12] text-white">
+                        The past is not static. It keeps moving.
+                    </h2>
+                    <p class="text-neutral-300 text-sm sm:text-base font-light leading-relaxed">
+                        Historic objects, advertising and photographs reveal how design and society have changed around one unmistakable brand. Explore the ideas, people and places behind the archive.
+                    </p>
+                    <div class="pt-4">
+                        <a href="#heritage" class="inline-flex items-center justify-between gap-4 bg-goldAccent hover:bg-goldHover text-white px-7 py-4 text-xs font-semibold tracking-widest transition-all group shadow-md">
+                            <span>ENTER THE HERITAGE STORY</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column Image -->
+                <div class="lg:col-span-7">
+                    <div class="relative overflow-hidden aspect-[16/10] bg-neutral-800 shadow-2xl">
+                        <img src="Living archive.png" alt="Archivist examining bottles in archives" class="w-full h-full object-cover filter grayscale contrast-125 hover:scale-105 transition-transform duration-700" onerror="this.src='https://placehold.co/800x500/222222/FFFFFF?text=Living+archive.png';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDITORIAL QUOTE BLOCK -->
+        <section class="py-20 editorial-border-t">
+            <div class="max-w-4xl mx-auto text-center space-y-6 px-4">
+                <span class="serif-title text-6xl text-goldAccent block">“</span>
+                <blockquote class="serif-title text-3xl sm:text-4xl lg:text-5xl font-normal text-neutral-900 leading-snug">
+                    “A simple moment of refreshment can hold a remarkable amount of shared history.”
+                </blockquote>
+                <div class="text-xs tracking-widest text-neutral-500 uppercase font-medium pt-2">
+                    AN EDITORIAL PERSPECTIVE ON THE COCA-COLA ARCHIVE
+                </div>
+                <div class="pt-8 flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="#portfolio" class="text-xs tracking-widest font-semibold text-neutral-900 hover:text-goldAccent transition-colors pb-1 border-b border-neutral-900">
+                        CONTINUE THE COLLECTION
+                    </a>
+                    <a href="#portfolio" class="inline-flex items-center gap-3 bg-goldAccent hover:bg-goldHover text-white px-7 py-3.5 text-xs font-semibold tracking-widest transition-all shadow-sm">
+                        <span>VIEW OUR PORTFOLIO</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+ 
+
+</body>
+</html>
