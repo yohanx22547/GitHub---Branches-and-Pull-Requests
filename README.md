@@ -26,7 +26,7 @@ This document summarizes the step-by-step collaborative Git and GitHub workflow 
 Staged, committed, and pushed the new branch to the remote GitHub repository: 
 git add .
 git commit -m "say something"
-git push origin user2Yohan2
+git push origin main
 
 ### 6.Create a Pull Request (PR)
 Created a Pull Request on GitHub comparing user2Yohan2 against main.
